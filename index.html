@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Night GPT Beta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button id="menuButton">☰</button>
+    <div id="menu">
+        <h3>Settings</h3>
+        <label for="width">Photo Width:</label>
+        <input type="text" id="width" placeholder="1024">
+        <label for="height">Photo Height:</label>
+        <input type="text" id="height" placeholder="1024">
+        <div id="userSection">
+            <button id="loginButton">Login</button>
+            <button id="signupButton">Sign Up</button>
+            <div id="loginForm" style="display: none;">
+                <input type="text" id="username" placeholder="Username">
+                <input type="password" id="password" placeholder="Password">
+                <button id="submitLogin">Submit</button>
+            </div>
+            <div id="signupInfo" style="display: none;">
+                <p id="generatedAccount"></p>
+                <button id="confirmAccount">Confirm</button>
+            </div>
+        </div>
+        <p id="resetTime"></p>
+    </div>
+
+    <div id="overlay">
+        <div id="termsModal">
+            <p>Please read and accept our <a href="terms.html" target="_blank">Terms and Conditions</a></p>
+            <button id="confirmButton">Confirm</button>
+        </div>
+    </div>
+
+    <div id="content">
+        <div id="chatContainer">
+            <div class="message bot-message">Welcome to Night GPT Beta! How can I assist you today?(encrypted chat)</div>
+        </div>
+        <form id="imageForm">
+            <input type="text" id="prompt" name="prompt" placeholder="Type your message...(free version)" required>
+            <button type="submit" id="sendButton" disabled>Send</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
